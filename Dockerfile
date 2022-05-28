@@ -6,6 +6,7 @@ ADD requirements.txt /opt/app-root/src/requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy our code from the current folder to /app inside the container
+# Modified by Deb
 ADD . /opt/app-root/src
 
 # Make port 80 available for links and/or publish
